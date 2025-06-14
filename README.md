@@ -4,8 +4,8 @@ Ini adalah website sederhana untuk profil bisnis, dengan animasi ringan, halaman
 
 ## Halaman
 
-- `index.html` — Halaman utama
-- `versi_gambar.html` — Versi dengan gambar background
+- `versi_gambar.html` — Halaman utama
+- `index.html` — Versi dengan gambar background
 - `portofolio.html` — Daftar proyek
 - `testimoni.html` — Testimoni dari klien
 - `blog.html` — Artikel dan tips
