@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Bisnis - Versi Gambar</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --dark: #1e3a8a;
+      --light-bg: #f9fafb;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-bg);
+      color: #333;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=1400&q=80') center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    header h1, header p, header a {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about, .services, .contact {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s ease-out forwards;
+    }
+
+    .about { animation-delay: 0.4s; }
+    .services { animation-delay: 0.8s; }
+    .contact { animation-delay: 1.2s; }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 5px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<style>
+  nav {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: bold;
+  }
+  nav a:hover {
+    color: #2563eb;
+  }
+</style>
+
+
+<nav>
+  <div><img src="logo.png" alt="Logo" style="height:40px; vertical-align:middle;"></div>
+  <div>
+    <a href="index.html">Beranda</a>
+    <a href="portofolio.html">Portofolio</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="blog.html">Blog</a>
+    <a href="tim.html">Tim</a>
+  </div>
+</nav>
+
+  <nav>
+    <div><strong>BisnisKami</strong></div>
+    <div>
+      <a href="#tentang">Tentang</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Solusi Bisnis Profesional</h1>
+    <p>Kami membantu Anda mencapai target dengan teknologi dan strategi tepat.</p>
+    <a href="#kontak" class="btn">Hubungi Kami</a>
+  </header>
+
+  <section class="about" id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Kami adalah tim profesional dengan pengalaman di berbagai industri untuk mengakselerasi bisnis Anda ke level berikutnya.</p>
+  </section>
+
+  <section class="services" id="layanan">
+    <h2>Layanan Kami</h2>
+    <p>• Transformasi digital<br>• UI/UX Design<br>• Pengembangan Aplikasi & Website<br>• Pemasaran berbasis data</p>
+  </section>
+
+  <section class="contact" id="kontak">
+    <h2>Kontak Kami</h2>
+    <form>
+      <input type="text" placeholder="Nama Lengkap" required />
+      <input type="email" placeholder="Alamat Email" required />
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit" class="btn">Kirim</button>
+    </form>
+  </section>
+</body>
+</html>
